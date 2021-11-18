@@ -1,0 +1,30 @@
+body {
+  background-color: darkred;
+}
+
+h1 {
+  color: blanchedalmond;
+  text-align: center;
+  font-family: 'Estonia', cursive;
+  font-size: 180px;
+}
+
+p {
+  font-family: 'Estonia', cursive;
+  font-size: 20px;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid darkred;
+  border-radius: 4px;
+}
+input, select, textarea {
+  color: blanchedalmond;
+}
+
+cardbody {
+  border: 2px solid burlywood;
+  border-radius: 4px;
+}
