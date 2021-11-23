@@ -15,7 +15,7 @@
           box-shadow: 0 4px 8px 0 burlywood;
           transition: 0.3s;
           height: 60%;
-          width: 50%;
+          width: 60%;
           background-color: blanchedalmond;
         }
         
@@ -28,40 +28,44 @@
         }
         
         </style>
-    <p>
-        <div class="card-body" style="display: flex; flex-direction: row; margin-left: 350px; margin-top: 0px; margin-bottom: 50px;">
+    <p >
+        <form action="phpinfo.php" method="get" id="rcorners1" class="card-body" style="display: flex; flex-direction: row; margin-left: 290px; margin-top: 0px; margin-bottom: 50px;">
               
             <div class="row" style="display: flex; flex-direction: row;">
               
               <p style="color: black; font-size: 50px; font-family: 'Estonia', cursive; text-indent: 10px; font-weight: bold; vertical-align:middle; margin-top: 5px; margin-bottom: 7px;">Add your contribution:</p>
             
-                <form style="margin-top: 10px; margin-left: 5px;"> 
-                  <input type="text" name="type" placeholder="Type..."> 
+                <form  style="margin-top: 10px; margin-left: 10px;"> 
+                  <input type="text" name="type" placeholder="Type...">
                 </form>
+                <br\>
+                <button class="nav-link" href="phpinfo.php" style="margin-left: 10px; margin-top: 16px;">View</button>
+            <button type="submit" style="margin-left: 3px; margin-top: 16px;">Submit</button>
+        
             </div>
-            </div>
-
-            <a class="nav-link" href="second.html" type="submit" value="Submit" style="margin-left: 590px;">View</a>
-           <a class="nav-link" href="second.html" type="submit" value="Submit" style="margin-left: 10px;">Submit</a>
-              </p>
+              </form>
+            
+           
+             
+          </p>
 
 
     <style> 
+    #rcorners1 {
+     border-radius: 17px;
+       }  
         input[type=text] {
-        width: 130px;
+        width: 350px;
         padding: 12px 20px;
         margin: 6px 0;
         box-sizing: border-box;
         border: none;
         border-bottom: 2px solid #5A3300;
         background-color: blanchedalmond;
-        transition: width 0.4s ease-in-out;
         font-family: 'Kaushan Script', cursive;
         font-size: 20px;
         }
-        input[type=text]:focus {
-        width: 175%;
-            }
+       
             
             input:focus {outline:none !important;
                color:darkred;
@@ -71,6 +75,20 @@
 
         </style>
         <style> 
+            button {
+              
+              background-color: #5A3300;
+              border: none;
+              color: blanchedalmond;
+              padding: 16px 32px;
+              text-decoration: none;
+              margin: 4px 2px;
+              margin-top: 0px;
+              cursor: pointer;
+              border: none;
+              border-radius: 15px;
+              box-shadow: 0 4px blanchedalmond;
+            }
             a {
               
               background-color: #5A3300;
@@ -79,13 +97,12 @@
               padding: 16px 32px;
               text-decoration: none;
               margin: 4px 2px;
-              margin-top: 100px;
+              margin-top: 0px;
               cursor: pointer;
               border: none;
               border-radius: 15px;
               box-shadow: 0 4px blanchedalmond;
             }
-           
             </style>
 </body>
 
