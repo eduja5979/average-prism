@@ -21,7 +21,7 @@ echo "Connected successfully";
 
 $sql = "CREATE TABLE table1 (con CHAR(500))";
 
-$sql = "INSERT INTO table1 VALUES ('$ay')";
+$isql = "INSERT INTO table1 VALUES ('$ay')";
     
     if ($conn->query($sql) === TRUE) {
       echo "Success";
