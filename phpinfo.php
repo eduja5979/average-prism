@@ -1,10 +1,10 @@
 <html>
-<body>
-
+<body style="background-color: darkred;">
 
 <?php
+
+
 $ay = $_GET["type"];
-echo $ay; 
 
 
 $servername = "remotemysql.com";
@@ -13,34 +13,36 @@ $password = "7h68oQ4XhX";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $username);
-echo "<\br>";
-echo "<\br>";
 
 
-// Check connection
+ // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
 
+$last= (int) "SELECT MAX(number) FROM table1";
+echo $last;
+$input= (int) $last + 1;
 
-$sql = "INSERT INTO table1 (cont) VALUES ('$ay')";
+$sql = "INSERT INTO table1 (number, cont) VALUES ('$input','$ay')";
     
-   /* if ($conn->query($sql) === TRUE) {
-      echo "Success";
+    if ($conn->query($sql) === TRUE) {
+      ;
     } else {
       echo "Error: " . $conn->error;
-    }*/
+    }
     
     $sql = "SELECT cont FROM table1";
     $result = $conn->query($sql);
+    $p = "";
 
     if ($result->num_rows > 0) {
      // output data of each row
         while($row = $result->fetch_assoc()) {
-            echo $row["cont"]. "<br>";
-            echo "<\br>";
-            echo "<\br>";
+            $p = $row["cont"];
+            echo "<p style='font-size: 33px; color: blanchedalmond;'>$p</p>
+            <style> p {font-family: 'Brush Script MT', cursive;</style>";
         }
     } 
     else {
